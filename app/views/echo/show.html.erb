@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <div class="span2">
+    <table class="table table-bordered">
+      <tr>
+        <td>hello</td>
+        <td>world</td>
+      </tr>
+      <tr>
+        <td>goodbye</td>
+        <td>world</td>
+      </tr>
+    </table>
+  </div>
+  <div class="span5">
+    <%= form_tag "/echo/echo", :method => "post" do %>
+      <%= field_set_tag 'Name Form' do %>
+        <label>Name</label>
+        <div class="controls">
+          <div class="input-prepend">
+            <span class="add-on"><i class="icon-star"></i></span>
+            <%= text_field_tag "name", nil, placeholder: 'Type something...' %>
+          </div>
+        </div>
+        <span class="help-block">Enter your name here</span>
+        <label class="checkbox">
+          <%= check_box_tag "check1" %>Check me out
+        </label>
+        <%= button_tag "Submit Name", class: "btn btn-primary" %>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="span5">
+    <%= form_tag "/echo/echo", :method => "post" do %>
+      <%= field_set_tag 'Age Form' do %>
+        <label>Age</label>
+        <div class="controls">
+          <div class="input-prepend">
+            <span class="add-on"><i class="icon-calendar"></i></span>
+            <%= text_field_tag "age", nil, placeholder: 'Type something...' %>
+          </div>
+        </div>
+        <span class="help-block">Enter age</span>
+        <label class="checkbox">
+          <%= check_box_tag "check2" %>Check me out
+        </label>
+        <%= button_tag "Submit Age", class: "btn" %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
