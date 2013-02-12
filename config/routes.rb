@@ -1,4 +1,6 @@
 EchoApp::Application.routes.draw do
+  get "news/display"
+
   root :to => 'echo#show'
 
   resources :echo

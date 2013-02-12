@@ -1,0 +1,110 @@
+<div class="container">
+  <div class="row">
+    <div class="hero-unit">
+      <div class="page-header">
+        <h1>Lorem Ipsum News</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span9">
+      <div class="row well well-small">
+        <div class="tabbable">
+          <!-- Only required for left/right tabs -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab">Space</a></li>
+            <li><a href="#tab2" data-toggle="tab">Windows</a></li>
+            <li><a href="#tab3" data-toggle="tab">Pixar</a></li>
+            <li><a href="#tab4" data-toggle="tab">Vine</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <%= image_tag("http://cdn1.sbnation.com/entry_photo_images/7647185/429387main_s130e012141_hi_large_verge_medium_landscape.jpeg", class: "img-rounded") %>
+              <h3>
+                <%= @tab1_header %>
+              </h3>
+              <p>
+                <%= @tab1_body1 %>
+              </p>
+              <p>
+                <%= @tab1_body2 %>
+              </p>
+              <span class="label label-info">VIA</span> <span class="badge"><a href="http://www.theverge.com/2013/2/7/3965866/nasa-holding-iss-google-hangout-february-22nd" class="source_link">THE VERGE</a></span>
+              <br />
+              <span class="label label-info">SOURCE</span> <span class="badge"><a href="http://www.nasa.gov/home/hqnews/2013/feb/HQ_13-042_ISS_Google_Hangout.html" class="source_link">NASA</a></span>
+            </div>
+            <div class="tab-pane" id="tab2">
+              <%= image_tag("http://cdn2.sbnation.com/entry_photo_images/7646621/microsoftlogostock1_640_large_verge_medium_landscape.jpg", class: "img-rounded") %>
+              <h3>
+                <%= @tab2_header %>
+              </h3>
+              <p>
+                <%= @tab2_body1 %>
+              </p>
+              <p>
+                <%= @tab2_body1 %>
+              </p>
+              <span class="label label-info">VIA</span> <span class="badge"><a href="http://www.theverge.com/2013/2/7/3965318/windows-blue-to-put-most-microsoft-products-on-yearly-update-cycle" class="source_link">THE VERGE</a></span>
+              <br />
+              <span class="label label-info">SOURCE</span> <span class="badge"><a href="http://www.zdnet.com/microsofts-blue-wave-is-coming-to-more-than-just-windows-7000010998/" class="source_link">ZDNET</a></span>
+            </div>
+            <div class="tab-pane" id="tab3">
+              <%= image_tag("http://cdn0.sbnation.com/entry_photo_images/7647051/BengalsTexans_large_verge_medium_landscape.jpg", class: "img-rounded") %>
+              <h3>
+                <%= @tab3_header %>
+              </h3>
+              <p>
+                <%= @tab3_body %>
+              </p>
+              <span class="label label-info">VIA</span> <span class="badge"><a href="http://www.theverge.com/2013/2/7/3965712/pixar-animator-draws-nfl-games-as-mascot-battles" class="source_link">THE VERGE</a></span>
+              <br />
+              <span class="label label-info">SOURCE</span> <span class="badge"><a href="http://munchanka.blogspot.com/search/label/fantasy%20football" class="source_link">AUSTIN TRANSLATION</a></span>
+            </div>
+            <div class="tab-pane" id="tab4">
+              <%= image_tag("http://cdn1.sbnation.com/entry_photo_images/7646861/vine_coffee_large_verge_medium_landscape.png", class: "img-rounded") %>
+              <h3>
+                <%= @tab4_header %>
+              </h3>
+              <p>
+                <%= @tab4_body %>
+              </p>
+              <span class="label label-info">VIA</span> <span class="badge"><a href="http://www.theverge.com/2013/2/7/3965542/rus-yusupov-explains-vine-design" class="source_link">THE VERGE</a></span>
+              <br />
+              <span class="label label-info">SOURCE</span> <span class="badge"><a href="https://vine.co/blog/design-at-vine" class="source_link">VINE</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row well well-small">
+        <p>
+          <span class="label label-important">Requirements</span>
+        </p>
+        <%= @built_table %>
+        <%= @requirements %>
+      </div>
+      <div class="row well well-small">
+        <p>
+          <span class="label label-success">Notes</span>
+        </p>
+        <p>
+          This page created using <a href="http://brackets.io/">Brackets</a>
+        </p>
+      </div>
+    </div>
+    <div class="span3 well well-small pull-right sidebar_color">
+      <h3>
+        Sidebar
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur <span class="badge">1</span> adipiscing elit. In orci nunc, varius vel congue vitae, viverra non dolor. Nunc odio risus, vulputate at viverra at, facilisis ut nisi. Phasellus pellentesque, arcu a volutpat<span class="badge badge-success">2</span> fringilla, sapien augue volutpat sem, non consectetur felis nulla bibendum risus. Pellentesque ullamcorper venenatis nulla auctor dignissim. Maecenas vel purus ut velit <span class="badge badge-warning">3</span> viverra. Suspendisse accumsan convallis ultricies. Nulla et diam nisl, vitae fringilla magna. In in sapien eu justo sodales dapibus a sed justo. Morbi et arcu eros, quis ultricies nisl. Pellentesque volutpat nisi quis magna <span class="badge badge-important">4</span> nec congue magna ullamcorper. Nulla nec leo tincidunt mauris aliquam ullamcorper. Aliquam vitae <span class="badge badge-info">5</span> nec neque lobortis porttitor.
+      </p>
+      <ul>
+        <li>List item <span class="badge">1</span></li>
+        <li>List item <span class="badge badge-success">2</span></li>
+        <li>List item <span class="badge badge-warning">3</span></li>
+        <li>List item <span class="badge badge-important">4</span></li>
+        <li>List item <span class="badge badge-info">5</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
